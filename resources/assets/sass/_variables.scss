@@ -1,0 +1,163 @@
+//Dalhousie Branding Colors
+$dal-gold: #c08c0c;
+$dal-grey: #707372;
+$dal-black: #000000;
+$dal-white: #ffffff;
+$dal-supporting-blue: #00bbff;
+$dal-supporting-green: #3ba86b;
+$dal-supporting-red: #ee0701;
+$dal-supproting-purple: #8b008b;
+$dal-supporting-yellow: #fbe122;
+// Body
+$body-bg: $dal-white;
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+//Link Color
+$link-color: $dal-black;
+$link-hover-color: $dal-grey;
+$link-hover-decoration: none !important;
+
+
+// Brands
+$brand-primary: $dal-black;
+$brand-info: $dal-supporting-blue;
+$brand-success: $dal-gold;
+$brand-warning: $dal-supporting-yellow;
+$brand-danger: $dal-supporting-red;
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "../../../node_modules/font-awesome/fonts" !default;
+$font-family-sans-serif: ClassicGrotesque,
+Arial,
+sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: $dal-black;
+// Navbar
+$navbar-default-bg: $dal-grey;
+$navbar-default-color :$dal-black !default;
+$navbar-default-link-color: $dal-white !default;
+$navbar-default-link-hover-color: $dal-gold !default;
+$navbar-default-link-hover-bg: transparent !default;
+$navbar-default-link-active-color: $dal-white !default;
+$navbar-default-link-active-bg: darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color: darken($navbar-default-link-color, 6.5%) !default;
+$navbar-default-link-disabled-bg: transparent !default;
+// Buttons
+$btn-default-color: $text-color;
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+// Panels
+$panel-default-heading-bg:$dal-grey;
+$panel-inner-border: $dal-black !default;
+$panel-footer-bg: $dal-grey !default;
+$panel-bg: darken($body-bg, 1%);
+$panel-default-text: $dal-white !default;
+$panel-default-border: $dal-black !default;
+$panel-default-heading-bg: $dal-grey !default;
+$panel-primary-text: $dal-white !default;
+//Buttons
+$btn-font-weight: bold !default;
+$btn-default-color: $dal-grey !default;
+$btn-default-bg: $dal-white !default;
+$btn-default-border: lighten($dal-grey, 10%) !default;
+$btn-primary-color: $dal-white !default;
+$btn-primary-bg: lighten($brand-primary, 10%) !default;
+$btn-primary-border: darken($btn-primary-bg, 5%) !default;
+$btn-success-color: $dal-white !default;
+$btn-success-bg: $brand-success !default;
+$btn-success-border: darken($btn-success-bg, 5%) !default;
+$btn-info-color: $dal-white !default;
+$btn-info-bg: $dal-gold !default;
+$btn-info-border: darken($btn-info-bg, 5%) !default;
+$btn-warning-color: $dal-white !default;
+$btn-warning-bg: darken($brand-warning, 20%) !default;
+$btn-warning-border: darken($btn-warning-bg, 5%) !default;
+$btn-danger-color: $dal-white !default;
+$btn-danger-bg: lighten($brand-danger, 10%) !default;
+$btn-danger-border: darken($btn-danger-bg, 5%) !default;
+$btn-link-disabled-color: $dal-grey !default;
+//vote button colors
+$btn-notneeded-color: darken($brand-danger, 20%) !default;
+$btn-wanted-color: darken($brand-warning, 20%) !default;
+$btn-needed-color: darken($dal-supporting-green, 20%) !default;
+$row-notneeded-color: lighten($btn-notneeded-color, 2%);
+$row-wanted-color: lighten($btn-wanted-color, 10%);
+$row-needed-color: lighten($btn-needed-color, 10%);
+
+
+// Custom CSS
+
+a,a:link,a:visited{
+  color: $dal-black;
+  border-bottom: 1px solid $dal-gold;
+}
+a:hover{
+  color: $dal-grey;
+  border-bottom: 1px solid $dal-grey;
+  text-decoration: none;
+}
+
+.panel-heading a, .panel-heading a:link, .panel-heading a:visited, a.btn, a.btn:link, a.btn:visited, .navbar a, .navbar a:link, .navbar a:visited{
+  color: $dal-white;
+  border-bottom: none;
+}
+
+.dropdown-menu a, .dropdown-menu a:link, .dropdown-menu a:visited{
+  color: $dal-grey;
+}
+.panel-heading a:hover{
+  color: $dal-white;
+  border-bottom: none;
+  text-decoration: none;
+}
+a.btn:hover{
+  color: $dal-white;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.custom-bullet li {
+    display: block;
+}
+
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+
+@font-face{font-family:"ClassicGrotesque";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot.lt_07104ea223eeb35b085e90e4f40d07f1.res/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot.lt_07104ea223eeb35b085e90e4f40d07f1.res/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/41d33820-6252-4164-a857-0814a1fd2302.woff.lt_cd4ef2b7dfd67939966d9b28c815951b.res/41d33820-6252-4164-a857-0814a1fd2302.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/32e51bed-d726-44f8-ad5a-91b848435a51.ttf.lt_fb226cb0835520c8713feace87318958.res/32e51bed-d726-44f8-ad5a-91b848435a51.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0.svg.lt_b8daa9c49bf3048308d7a148d72bfe54.res/3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0.svg#3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"ClassicGrotesque";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot.lt_c64be932319017cf480104cba06c88ca.res/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot.lt_c64be932319017cf480104cba06c88ca.res/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/813cab7b-0a4e-4973-8278-af66df24ea8e.woff.lt_e2762bee03f0762babf02d125cb1770d.res/813cab7b-0a4e-4973-8278-af66df24ea8e.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/b08e6609-2511-465f-bd1f-7f1f2cad1bfe.ttf.lt_4c59ba5ac1824d993db5027e3064e9c2.res/b08e6609-2511-465f-bd1f-7f1f2cad1bfe.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/cbdd13a3-c1c8-4f4e-b760-d027985b9a33.svg.lt_941e6ddebf712f50034bff1eec165916.res/cbdd13a3-c1c8-4f4e-b760-d027985b9a33.svg#cbdd13a3-c1c8-4f4e-b760-d027985b9a33") format("svg");font-weight:normal;font-style:italic}
+@font-face{font-family:"ClassicGrotesque";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff.lt_e3d49dcc245669ab973436cdc0368135.res/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf.lt_499840c68b6f80d561053e4a0e1cb336.res/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg.lt_1a3042f5d09af3340934e9ac46a5b318.res/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg#e6215709-8f2b-4651-bbe7-2bb040f6c90d") format("svg");font-weight:bold;font-style:normal}
+@font-face{font-family:"ClassicGrotesque";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/42152cfb-fd57-451d-b408-bcc16129073f.woff.lt_ab5079d8b9f2d02da5d8baba6b8d1eb3.res/42152cfb-fd57-451d-b408-bcc16129073f.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf.lt_b5da01c2d70751a119c63fc48aab570f.res/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/6226bc93-c7d0-4077-b085-835f2c5961f8.svg.lt_454c95e7455fa75ea1f6436e0b63f5af.res/6226bc93-c7d0-4077-b085-835f2c5961f8.svg#6226bc93-c7d0-4077-b085-835f2c5961f8") format("svg");font-weight:bold;font-style:italic}
+@font-face{font-family:"ClassicGrotesqueRg";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/99898fd0-33c7-482e-ae03-d8598f04cd57.eot.lt_4301a38c1ff78705d54c4e51388d88da.res/99898fd0-33c7-482e-ae03-d8598f04cd57.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/99898fd0-33c7-482e-ae03-d8598f04cd57.eot.lt_4301a38c1ff78705d54c4e51388d88da.res/99898fd0-33c7-482e-ae03-d8598f04cd57.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c6b0c4e7-468c-4416-bf4f-c8254e52ec05.woff.lt_d1e58393f7e792db44ae1932935e7222.res/c6b0c4e7-468c-4416-bf4f-c8254e52ec05.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f3d24aab-e54a-40b1-b3cc-5842d107509b.ttf.lt_d15f8ae4131468235c4d63109a123452.res/f3d24aab-e54a-40b1-b3cc-5842d107509b.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf.svg.lt_8e1f4768924d13eabcf66bcf8fa69b03.res/f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf.svg#f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"ClassicGrotesqueRg";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot.lt_f8f08204db1d935916a792e6ee51fb58.res/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot.lt_f8f08204db1d935916a792e6ee51fb58.res/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1f7cd237-bbbf-4514-92e5-e4917b9fee1c.woff.lt_a47f724aef45e9b60aafb69dcabbf592.res/1f7cd237-bbbf-4514-92e5-e4917b9fee1c.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/777df9a4-2e0d-48f8-9eac-48e2d53e3daa.ttf.lt_574af93a82c40dff4bd82865dc171d49.res/777df9a4-2e0d-48f8-9eac-48e2d53e3daa.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/9c1d2322-bb9f-4d16-b473-983e668ce34e.svg.lt_9c4ac8204a109189293e6e6bfb96bb3a.res/9c1d2322-bb9f-4d16-b473-983e668ce34e.svg#9c1d2322-bb9f-4d16-b473-983e668ce34e") format("svg");font-weight:normal;font-style:italic}
+@font-face{font-family:"ClassicGrotesqueRg";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff.lt_e3d49dcc245669ab973436cdc0368135.res/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf.lt_499840c68b6f80d561053e4a0e1cb336.res/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg.lt_1a3042f5d09af3340934e9ac46a5b318.res/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg#e6215709-8f2b-4651-bbe7-2bb040f6c90d") format("svg");font-weight:bold;font-style:normal}
+@font-face{font-family:"ClassicGrotesqueRg";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/42152cfb-fd57-451d-b408-bcc16129073f.woff.lt_ab5079d8b9f2d02da5d8baba6b8d1eb3.res/42152cfb-fd57-451d-b408-bcc16129073f.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf.lt_b5da01c2d70751a119c63fc48aab570f.res/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/6226bc93-c7d0-4077-b085-835f2c5961f8.svg.lt_454c95e7455fa75ea1f6436e0b63f5af.res/6226bc93-c7d0-4077-b085-835f2c5961f8.svg#6226bc93-c7d0-4077-b085-835f2c5961f8") format("svg");font-weight:bold;font-style:italic}
+@font-face{font-family:"ClassicGrotesqueW01-Bk";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot.lt_07104ea223eeb35b085e90e4f40d07f1.res/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot.lt_07104ea223eeb35b085e90e4f40d07f1.res/61f1f16a-4a72-4c60-93ba-aa8ab19f8652.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/41d33820-6252-4164-a857-0814a1fd2302.woff.lt_cd4ef2b7dfd67939966d9b28c815951b.res/41d33820-6252-4164-a857-0814a1fd2302.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/32e51bed-d726-44f8-ad5a-91b848435a51.ttf.lt_fb226cb0835520c8713feace87318958.res/32e51bed-d726-44f8-ad5a-91b848435a51.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0.svg.lt_b8daa9c49bf3048308d7a148d72bfe54.res/3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0.svg#3ed6a677-a8c3-4fa4-a0fe-62ce687b5fb0") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-SmBI";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot.lt_fb1bed0e632226e85989847f7eae5597.res/1c4696db-e7dc-4845-bcb1-855fff8dc288.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/42152cfb-fd57-451d-b408-bcc16129073f.woff.lt_ab5079d8b9f2d02da5d8baba6b8d1eb3.res/42152cfb-fd57-451d-b408-bcc16129073f.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf.lt_b5da01c2d70751a119c63fc48aab570f.res/0ff2a0f5-321c-475b-8275-44a0d5dca749.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/6226bc93-c7d0-4077-b085-835f2c5961f8.svg.lt_454c95e7455fa75ea1f6436e0b63f5af.res/6226bc93-c7d0-4077-b085-835f2c5961f8.svg#6226bc93-c7d0-4077-b085-835f2c5961f8") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-SmB";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f56470d2-1fa8-40a6-96aa-554a90056153.eot.lt_27b725b78b755c760a73b6b70b80bef5.res/f56470d2-1fa8-40a6-96aa-554a90056153.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff.lt_e3d49dcc245669ab973436cdc0368135.res/5f79a4f3-bd11-47d1-ade7-8284d3c7ab62.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf.lt_499840c68b6f80d561053e4a0e1cb336.res/c62352b5-0f4e-41b3-b33e-5b0f8c8a31b5.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg.lt_1a3042f5d09af3340934e9ac46a5b318.res/e6215709-8f2b-4651-bbe7-2bb040f6c90d.svg#e6215709-8f2b-4651-bbe7-2bb040f6c90d") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-BkI";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot.lt_c64be932319017cf480104cba06c88ca.res/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot.lt_c64be932319017cf480104cba06c88ca.res/98fef7b4-1337-4df5-b297-f4e2375bc2fe.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/813cab7b-0a4e-4973-8278-af66df24ea8e.woff.lt_e2762bee03f0762babf02d125cb1770d.res/813cab7b-0a4e-4973-8278-af66df24ea8e.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/b08e6609-2511-465f-bd1f-7f1f2cad1bfe.ttf.lt_4c59ba5ac1824d993db5027e3064e9c2.res/b08e6609-2511-465f-bd1f-7f1f2cad1bfe.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/cbdd13a3-c1c8-4f4e-b760-d027985b9a33.svg.lt_941e6ddebf712f50034bff1eec165916.res/cbdd13a3-c1c8-4f4e-b760-d027985b9a33.svg#cbdd13a3-c1c8-4f4e-b760-d027985b9a33") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-Bd";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e5883671-b0c6-499a-8f96-47395b697cce.eot.lt_a62e6d927c9135d0ff28fc6d0c838305.res/e5883671-b0c6-499a-8f96-47395b697cce.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e5883671-b0c6-499a-8f96-47395b697cce.eot.lt_a62e6d927c9135d0ff28fc6d0c838305.res/e5883671-b0c6-499a-8f96-47395b697cce.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/8dffb395-34b5-420e-9c9c-0db09685d947.woff.lt_37387f2a8fab0cd1c41a6fbeb0d9eaf9.res/8dffb395-34b5-420e-9c9c-0db09685d947.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/0f266978-afd4-4e30-9dc1-408f64684e6d.ttf.lt_e00f8d32f1920276e6db74e908d0974b.res/0f266978-afd4-4e30-9dc1-408f64684e6d.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/69c218f1-4d71-4f2b-96f4-e1342c4c11bd.svg.lt_2b38c18931d6ed23a2ce0ac0a48d119d.res/69c218f1-4d71-4f2b-96f4-e1342c4c11bd.svg#69c218f1-4d71-4f2b-96f4-e1342c4c11bd") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-Lt";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c4fc8f19-3f8a-47d3-8012-c58981225ea7.eot.lt_cd6f40a31ee0f44a1d3bbd087659392a.res/c4fc8f19-3f8a-47d3-8012-c58981225ea7.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c4fc8f19-3f8a-47d3-8012-c58981225ea7.eot.lt_cd6f40a31ee0f44a1d3bbd087659392a.res/c4fc8f19-3f8a-47d3-8012-c58981225ea7.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/b0c28414-808f-469d-ae65-859e915f5e45.woff.lt_7b6ac235cfbd721dd640fec336a4df90.res/b0c28414-808f-469d-ae65-859e915f5e45.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/5f9bbccf-59b9-41cc-a851-21ecc2852640.ttf.lt_f07635909c9ae1b5e7855c89a4f5a08c.res/5f9bbccf-59b9-41cc-a851-21ecc2852640.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/58eec2e0-0229-4ec9-82da-ed92fc44a489.svg.lt_17ba1d849bfbd542caf8b616fcde910a.res/58eec2e0-0229-4ec9-82da-ed92fc44a489.svg#58eec2e0-0229-4ec9-82da-ed92fc44a489") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-It";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot.lt_f8f08204db1d935916a792e6ee51fb58.res/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot.lt_f8f08204db1d935916a792e6ee51fb58.res/f7e6a0c0-aa75-4ef2-b917-b0fd8209ab56.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/1f7cd237-bbbf-4514-92e5-e4917b9fee1c.woff.lt_a47f724aef45e9b60aafb69dcabbf592.res/1f7cd237-bbbf-4514-92e5-e4917b9fee1c.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/777df9a4-2e0d-48f8-9eac-48e2d53e3daa.ttf.lt_574af93a82c40dff4bd82865dc171d49.res/777df9a4-2e0d-48f8-9eac-48e2d53e3daa.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/9c1d2322-bb9f-4d16-b473-983e668ce34e.svg.lt_9c4ac8204a109189293e6e6bfb96bb3a.res/9c1d2322-bb9f-4d16-b473-983e668ce34e.svg#9c1d2322-bb9f-4d16-b473-983e668ce34e") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-BdI";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/6466aca7-5939-446d-86ca-d90e76f3e4d0.eot.lt_6aeaf2429ff8f6941fe610aa908c8a2d.res/6466aca7-5939-446d-86ca-d90e76f3e4d0.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/6466aca7-5939-446d-86ca-d90e76f3e4d0.eot.lt_6aeaf2429ff8f6941fe610aa908c8a2d.res/6466aca7-5939-446d-86ca-d90e76f3e4d0.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/692b64ef-8e0b-41fb-a22c-a8f7394f669d.woff.lt_6a7afbdf54f3d2fdd5e3fcf767be96eb.res/692b64ef-8e0b-41fb-a22c-a8f7394f669d.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c4fff10e-59c0-41df-b561-5e4b9a0b5a51.ttf.lt_2efd4a9efcc862f5a9e68bd1bc1298b2.res/c4fff10e-59c0-41df-b561-5e4b9a0b5a51.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/becbcef0-0a17-45cd-a744-3ad9ddae17f3.svg.lt_ee9f6a311dcc93c058c16455bf83b6f0.res/becbcef0-0a17-45cd-a744-3ad9ddae17f3.svg#becbcef0-0a17-45cd-a744-3ad9ddae17f3") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-LtI";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/fb71458c-8329-4be1-a8f9-e862fd9af38f.eot.lt_457fe5d0174f235f5cfe36d55d392e66.res/fb71458c-8329-4be1-a8f9-e862fd9af38f.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/fb71458c-8329-4be1-a8f9-e862fd9af38f.eot.lt_457fe5d0174f235f5cfe36d55d392e66.res/fb71458c-8329-4be1-a8f9-e862fd9af38f.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f921e3c9-7f4b-485b-8991-88425e6ea70f.woff.lt_6fd6dd46e97f091a9acb27036eda9c88.res/f921e3c9-7f4b-485b-8991-88425e6ea70f.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/a8615718-8709-4e49-9de1-6be4fb6d99b6.ttf.lt_da65b9f06ba2e54ef28c6f651fdc9136.res/a8615718-8709-4e49-9de1-6be4fb6d99b6.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/856303d8-4aca-421b-a3b4-c8e6333cacbd.svg.lt_925ba29378ccd3a0c8afae00c32497c5.res/856303d8-4aca-421b-a3b4-c8e6333cacbd.svg#856303d8-4aca-421b-a3b4-c8e6333cacbd") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-Md";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/299895da-b451-41f9-960c-024373a276bc.eot.lt_8808df3c2f4fcb7f3b51f34bca194d47.res/299895da-b451-41f9-960c-024373a276bc.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/299895da-b451-41f9-960c-024373a276bc.eot.lt_8808df3c2f4fcb7f3b51f34bca194d47.res/299895da-b451-41f9-960c-024373a276bc.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f94b2377-9dc9-4479-9f47-fe1c6c0f8bb8.woff.lt_e70ad64e7b894cca19315b579bb31f01.res/f94b2377-9dc9-4479-9f47-fe1c6c0f8bb8.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/722de522-eea2-4ead-a0eb-fc1aba0e77ba.ttf.lt_fd8765ddb6bdd095a83b878ffa2c80bb.res/722de522-eea2-4ead-a0eb-fc1aba0e77ba.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e84a807b-c1a1-4cb7-b3a5-5668829ba868.svg.lt_416e2ad884dabd65fbf0f76979fe3d3c.res/e84a807b-c1a1-4cb7-b3a5-5668829ba868.svg#e84a807b-c1a1-4cb7-b3a5-5668829ba868") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-XBd";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/b9b46239-61e1-45e4-a98e-4128a510f4e5.eot.lt_3494300d424a1f28875768118c2dfc13.res/b9b46239-61e1-45e4-a98e-4128a510f4e5.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/b9b46239-61e1-45e4-a98e-4128a510f4e5.eot.lt_3494300d424a1f28875768118c2dfc13.res/b9b46239-61e1-45e4-a98e-4128a510f4e5.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e61a69b1-7487-4a91-a527-ccfc547f9ac6.woff.lt_6d1a134a8451678733582bbd4478b558.res/e61a69b1-7487-4a91-a527-ccfc547f9ac6.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f980081b-cd80-49a7-b322-3b9b8e5c52f6.ttf.lt_c30706701ea0e36d05702e1f3912293f.res/f980081b-cd80-49a7-b322-3b9b8e5c52f6.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/e9e15beb-8620-4f1a-a138-ef89b52dd952.svg.lt_1aa9dec616fce66eaa8916e4ecebcda0.res/e9e15beb-8620-4f1a-a138-ef89b52dd952.svg#e9e15beb-8620-4f1a-a138-ef89b52dd952") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-XBd";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/8c88f3fe-c5b1-43c3-b33b-96fe6afa90eb.eot.lt_ea81115968d49f70ca2dbd037fa5f243.res/8c88f3fe-c5b1-43c3-b33b-96fe6afa90eb.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/8c88f3fe-c5b1-43c3-b33b-96fe6afa90eb.eot.lt_ea81115968d49f70ca2dbd037fa5f243.res/8c88f3fe-c5b1-43c3-b33b-96fe6afa90eb.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/78c1df56-4c29-4b14-b33f-7b10273bdafc.woff.lt_61d43b9d93760c27c2dc2c98b0154baa.res/78c1df56-4c29-4b14-b33f-7b10273bdafc.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/0a453906-7c07-4757-9b0b-f4fcc3eadad0.ttf.lt_abac8cec9ead9f938a7404cb3d32e2d5.res/0a453906-7c07-4757-9b0b-f4fcc3eadad0.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/37017979-42b1-4a63-a0f9-8cf088e94dda.svg.lt_9b30f61873fef40737717066a854b9e2.res/37017979-42b1-4a63-a0f9-8cf088e94dda.svg#37017979-42b1-4a63-a0f9-8cf088e94dda") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-Rg";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/99898fd0-33c7-482e-ae03-d8598f04cd57.eot.lt_4301a38c1ff78705d54c4e51388d88da.res/99898fd0-33c7-482e-ae03-d8598f04cd57.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/99898fd0-33c7-482e-ae03-d8598f04cd57.eot.lt_4301a38c1ff78705d54c4e51388d88da.res/99898fd0-33c7-482e-ae03-d8598f04cd57.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c6b0c4e7-468c-4416-bf4f-c8254e52ec05.woff.lt_d1e58393f7e792db44ae1932935e7222.res/c6b0c4e7-468c-4416-bf4f-c8254e52ec05.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f3d24aab-e54a-40b1-b3cc-5842d107509b.ttf.lt_d15f8ae4131468235c4d63109a123452.res/f3d24aab-e54a-40b1-b3cc-5842d107509b.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf.svg.lt_8e1f4768924d13eabcf66bcf8fa69b03.res/f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf.svg#f0e7972c-6809-4a5c-857d-d3cd6d9c2dcf") format("svg")}
+@font-face{font-family:"ClassicGrotesqueW01-MdI";src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/2723a598-2155-4a48-a08b-d6da5d3729d7.eot.lt_29471eb19374627ce9d5eba64daf0adf.res/2723a598-2155-4a48-a08b-d6da5d3729d7.eot?#iefix");src:url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/2723a598-2155-4a48-a08b-d6da5d3729d7.eot.lt_29471eb19374627ce9d5eba64daf0adf.res/2723a598-2155-4a48-a08b-d6da5d3729d7.eot?#iefix") format("eot"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/c460b776-24e2-47f4-a932-3ee0ae1057f5.woff.lt_50a0ac3c005ec6a6a27fb64bf5944007.res/c460b776-24e2-47f4-a932-3ee0ae1057f5.woff") format("woff"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/fa7db186-2745-4aae-9cf9-69f59bb62fe2.ttf.lt_fddb74c314f55d07d1273d25ac7dc7b1.res/fa7db186-2745-4aae-9cf9-69f59bb62fe2.ttf") format("truetype"),url("https://cdn.dal.ca/etc/designs/dalhousie/clientlibs/global/default/css/fonts/36a863d2-2429-4da3-8447-57249c673a65.svg.lt_ec429aa9f8db1254dc8218bf6d1001d8.res/36a863d2-2429-4da3-8447-57249c673a65.svg#36a863d2-2429-4da3-8447-57249c673a65") format("svg")}

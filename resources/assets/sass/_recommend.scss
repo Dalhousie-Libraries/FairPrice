@@ -1,0 +1,77 @@
+.btn-notneeded {
+    @extend .btn-primary;
+    background-color: $btn-notneeded-color;
+    border: thin solid $dal-black;
+    margin: 1px;
+}
+
+.btn-wanted {
+    @extend .btn-primary;
+    background-color: $btn-wanted-color;
+    border: thin solid $dal-black;
+    margin: 1px;
+}
+
+.btn-needed {
+    @extend .btn-primary;
+    background-color: $btn-needed-color;
+    border: thin solid $dal-black;
+    margin: 1px;
+}
+
+.btn-erase {
+    @extend .btn-primary;
+    background-color: transparent;
+    border: thin solid $dal-black;
+    margin: 1px;
+    &:hover{
+	background:transparent;
+	}
+
+}
+
+.row-notneeded {
+    background-color: $btn-notneeded-color;
+    box-shadow: 1px 0 0 0 $dal-black, 0 1px 0 0 $dal-black, 1px 1px 0 0 $dal-black, /* Just to fix the corner */
+    1px 0 0 0 $dal-black inset, 0 1px 0 0 $dal-black inset;
+    color: $dal-white;
+    text-align: center;
+}
+
+.row-wanted {
+    background-color: $btn-wanted-color;
+    box-shadow: 1px 0 0 0 $dal-black, 0 1px 0 0 $dal-black, 1px 1px 0 0 $dal-black, /* Just to fix the corner */
+    1px 0 0 0 $dal-black inset, 0 1px 0 0 $dal-black inset;
+    color: $dal-white;
+    text-align: center;
+}
+
+.row-needed {
+    background-color: $btn-needed-color;
+    box-shadow: 1px 0 0 0 $dal-black, 0 1px 0 0 $dal-black, 1px 1px 0 0 $dal-black, /* Just to fix the corner */
+    1px 0 0 0 $dal-black inset, 0 1px 0 0 $dal-black inset;
+    color: $dal-white;
+    text-align: center;
+}
+
+.recommendation-container {
+    display: flex;
+    height: 100%;
+    .recommendation {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+.review-row {
+     :nth-child(odd) {
+        background-color: rgb(249, 249, 249);
+    }
+}

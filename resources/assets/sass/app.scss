@@ -1,0 +1,33 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "variables";
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+//App Specific SCSS
+@import "recommend";
+@media print {
+    a[href]:after {
+        content: none !important;
+    }
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    >.col,
+    >[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.review-panel {
+    min-height: #{15 * $line-height-base}em;
+    max-height: #{15 * $line-height-base}em;
+    overflow-y: scroll;
+}
